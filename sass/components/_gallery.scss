@@ -1,22 +1,19 @@
 
 
-
-
-
-.gallery-ul {
+.gallery__ul {
     display: flex;
     flex-wrap: wrap;
     
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
 }
 
-.gallery-li {
-    flex-basis: calc(100%/ 3 - var(--card-set-gap));
+.gallery__li {
+    flex-basis: calc(100%/ 3 - 30px);
     
     width: 370px;
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
+    margin-top: 30px;
+    margin-left: 30px;
 
 
     border: 1px solid #eeeeee;
@@ -25,45 +22,46 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-li:hover, .gallery-li:focus {
+&:hover, &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+}
 
-.gallery-link:hover .gallery-overlay {
+
+
+.gallery__link:hover .gallery-overlay {
     transform: translateY(0);
 }
-.gallery-h-text {
+.gallery__wrap {
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
 }
 
-.gallery-h {
+.gallery__h3 {
 
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
-    color: var(--title-main);
+    color: $title-main;
     
 }
 
-.gallery-text {
+.gallery__text {
     margin-top: 4px;
 
     font-size: 16px;
     line-height: 1.875;
-    color: var(--main-text);
+    color: $main-text;
 }
 
 
-.div-overlay {
+.overlay {
     position: relative;
     overflow: hidden;
 }
-.gallery-overlay {
+.gallery__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,7 +71,7 @@
     padding-right: 24px;
 
     background-color: rgba(33, 150, 243, 0.9);
-    color: var(--overlay-text);
+    color: $overlay-text;
     font-style: normal;
     font-size: 18px;
     line-height: 1.55;

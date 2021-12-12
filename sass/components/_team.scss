@@ -74,6 +74,11 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
+    &:hover .network__icon,
+    &:focus .network__icon {
+        fill: $accent-icon;
+           }
+
 }
 
 
@@ -110,8 +115,5 @@
     
 }
 
-.network__li:hover .network__icon,
-.network__li:focus .network__icon {
-    fill: $accent-icon;
-       }
+
 

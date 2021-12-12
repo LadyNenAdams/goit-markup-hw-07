@@ -71,12 +71,10 @@
     
     color: $main-text;
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 
     &:hover .form__icon {
-        fill: $accent-color;
+       fill: $accent-color;
     
     }
 // не работают эффекты при ховере
@@ -125,6 +123,10 @@ display: block;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__textarea {
